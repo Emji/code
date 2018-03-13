@@ -1,0 +1,73 @@
+.story
+    background-image: url('../../images/main_bg.jpg')
+    position: relative
+    background-size: auto
+    min-height: 480px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+.box
+    position: relative
+    margin: 0 auto
+    top: 50px
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: white
+    border: solid 1px lightgrey
+.our
+    justify-content: center
+    &::after
+        content: url('../../images/decoration_line.png')
+        bottom: 0
+        height: 25px
+        width: 150px
+.box
+    .row
+        .col-4
+            .row
+                .col-3
+                    img
+                        width: 120%
+                        border: solid 1px black
+                        border-radius: 260px
+.fon
+    font-size: 10px
+.price
+    background-color: lightgrey
+    width: 100%
+    p
+        color: red
+        text-align: center
+        margin-top: 0
+        margin-bottom: 0
+.borderline
+    border-bottom: dotted 1px black
+.bordersolid
+    border-bottom: solid 1px black
+    border-right: solid 1px black
+
+.ogauche
+    position: absolute
+    top: 0
+    left: 0
+.odroi
+    position: absolute
+    top: 0
+    right: 0
+.bagauche
+    position: absolute
+    bottom: 0
+    left: 0
+.badroit
+    position: absolute
+    bottom: 0
+    right: 0
+
+#hov
+    &:hover
+        border-right: solid 7px $danger
+        #icon
+            color: $danger
+
